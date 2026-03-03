@@ -1,0 +1,12 @@
+{
+  "name": "typed-context-monorepo",
+  "version": "1.0.0",
+  "description": "Workspace for the typed-context package.",
+  "private": true,
+  "scripts": {
+    "test": "pnpm -r test",
+    "build": "pnpm -r build"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0"
+}

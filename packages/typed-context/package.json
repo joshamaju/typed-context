@@ -1,0 +1,44 @@
+{
+  "name": "typed-context",
+  "version": "0.0.0",
+  "description": "Type-aware context helpers for Effection operations.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./types": {
+      "default": "./ambient.d.ts",
+      "types": "./ambient.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "ambient.d.ts",
+    "README.md",
+    "package.json"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsc --w",
+    "clean": "rm -rf dist",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "check": "pnpm run build && pnpm run test",
+    "prepack": "pnpm run build"
+  },
+  "keywords": ["effection", "context", "type"],
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "effection": "^4.0.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "peerDependencies": {
+    "effection": "^4.0.2"
+  }
+}
