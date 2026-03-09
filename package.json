@@ -1,12 +1,17 @@
 {
-  "name": "typed-context-monorepo",
+  "name": "effection-typed-context-monorepo",
   "version": "1.0.0",
   "description": "Workspace for the typed-context package.",
   "private": true,
   "scripts": {
     "test": "pnpm -r test",
-    "build": "pnpm -r build"
+    "build": "pnpm -r build",
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "version": "changeset version"
   },
-  "license": "ISC",
-  "packageManager": "pnpm@10.14.0"
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0"
+  }
 }
