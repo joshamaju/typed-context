@@ -1,6 +1,6 @@
 {
   "name": "effection-typed-context",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Type-aware context helpers for Effection operations.",
   "type": "module",
   "main": "./dist/index.js",
